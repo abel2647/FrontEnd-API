@@ -1,0 +1,56 @@
+<div class="body">
+
+    <div class="login">
+        <img [src]="logo" alt="" width="50%" height="80%">
+        <h1 class="h3 mb-3 fw-normal">Registro</h1>
+    <div class="register">
+        <form class="example-form">
+            <!--<mat-form-field class="example-full-width">
+              <mat-label>Nombre</mat-label>
+              <input matInput disabled value="">
+            </mat-form-field>-->
+          
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input matInput>
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width">
+                <mat-label>Apellido</mat-label>
+                <input matInput>
+              </mat-form-field></td>
+            </tr></table>
+          
+            <p>
+              <!--<mat-form-field class="example-full-width">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Address 2</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
+            </p>-->
+          
+            <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field class="example-full-width">
+                <mat-label>Edad</mat-label>
+                <input matInput placeholder="Ex. 25" type="number">
+              </mat-form-field></td>
+              <td><mat-form-field class="example-full-width">
+                <mat-label>Sexo</mat-label>
+                <input matInput placeholder="H o M">
+              </mat-form-field></td>
+              
+            </tr></table>
+            
+            <td><mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" >
+              </mat-form-field></td>
+          </form>
+          <p></p>
+          <button (click)="ingresar()" class="ancho" mat-raised-button mat-button color="primary">Registrar</button>
+    </div>
+    </div>
+</div>
